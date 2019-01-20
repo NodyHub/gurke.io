@@ -104,16 +104,11 @@ page="
             </div>
           </div>
 
+           <div class='container text-center text-white'>
+              <a href="https://github.com/NodyHub/gurke.io">GitHub</a> | <a href="https://twitter.com/NodyTweet">Twitter</a>
+           </div>
         </div>
       </div>
-
-      <section class='text-center text-white'>                                                                
-        <div class='container' style='height: 32px'>
-           <a href="https://github.com/NodyHub/gurke.io"><img style='height: 100%' src='GitHub-Mark-32px.png' alt='GitHub' /></a>
-           <a href="https://twitter.com/NodyTweet"><img style='height: 100%' src='Twitter_Logo_Blue.png' alt='Twitter' /></a>
-        </div>
-      </section>
-
 
     </main>
 
