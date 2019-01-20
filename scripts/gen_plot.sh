@@ -5,8 +5,10 @@
 # Parkview August 2009
 # src: http://www.bdug.org.au/project/raspberrypi/gnuPlot-temperatures
 
+. $(dirname "$0")/CONFIG 
+
 # Local Variables
-DATA_SRC="/home/pi/data/log.csv"
+DATA_SRC="$DATA_DIR/log.csv"
 DATAFILE_IN1="/tmp/temp.THN132N.dat"
 DATAFILE_IN2="/tmp/temp.OSv1.dat"
 PNG="/tmp/plot.png"

@@ -1,4 +1,5 @@
-FROM ubuntu
+FROM debian:stable-20181226
+# FROM ubuntu:18.10
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Europe/Berlin

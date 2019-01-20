@@ -1,1 +1,1 @@
-*/12 * * * * /home/pi/scripts/temp-pipe.sh
+*/12 * * * * $GIT_BASE/gurke.io/scripts/temp-pipe.sh

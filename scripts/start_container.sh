@@ -1,11 +1,13 @@
 #!/bin/bash
 
-sudo docker build -t rtl ../docker/
+. $(dirname "$0")/CONFIG
+
+sudo docker build -t rtl $GIT_BASE/gurke.io/docker/
 sudo docker run \
     --rm \
     -d \
-    -v /home/pi/data:/data/ \
-    --device=/dev/bus/usb/001/004 \
+    -v $DATA_DIR:/data/ \
+    --device=/dev/bus/usb \
     rtl
 
 exit 0

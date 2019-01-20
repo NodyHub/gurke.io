@@ -1,6 +1,8 @@
 #!/bin/bash
 
-DATA_FILE=/home/pi/data/log.csv
+. $(dirname "$0")/CONFIG
+
+DATA_FILE=$DATA_DIR/log.csv
 
 temp_other=$(cat $DATA_FILE | grep OSv1 | cut -d , -f 6 | tail -1)
 date_other=$(cat $DATA_FILE | grep OSv1 | cut -d , -f 1 | cut -d \  -f 1 | tail -1)
@@ -10,7 +12,7 @@ temp_my=$(cat $DATA_FILE | grep THN132N | cut -d , -f 6 | tail -1)
 date_my=$(cat $DATA_FILE | grep THN132N | cut -d , -f 1 | cut -d \  -f 1 | tail -1)
 time_my=$(cat $DATA_FILE | grep THN132N | cut -d , -f 1 | cut -d \  -f 2 | tail -1)
 
-/home/pi/git/gurke.io/scripts/gen_plot.sh
+$GIT_BASE/gurke.io/scripts/gen_plot.sh
 PLOT=$(base64 /tmp/plot.png)
 
 
@@ -110,15 +112,7 @@ page="
 </html>
 "
 
-echo $page | ssh uberspace "cat > /var/www/virtual/haj/gurke.io/index.html"
+echo $page | ssh $WEBHOST "cat > $WEBDIR/index.html"
 
 exit 0
 
-
-
-
-
-
-
-
-# /var/www/virtual/haj/gurke.io
