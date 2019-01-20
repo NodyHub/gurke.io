@@ -1,0 +1,15 @@
+[Unit]
+Description=Setup Gurkenupdater                                                                                         
+
+[Service]
+Type=oneshot
+ExecStart=/home/pi/git/gurke.io/scripts/start_container.sh
+RemainAfterExit=true
+StandardOutput=journal
+WorkingDirectory=/home/pi/git/gurke.io/scripts/
+User=pi
+
+
+[Install]
+WantedBy=multi-user.target
+
