@@ -103,8 +103,17 @@ page="
               <img style='opacity: 0.8; width: 100%' src='data:image/png;base64, $PLOT' alt='Temperatur plot' />
             </div>
           </div>
+
         </div>
       </div>
+
+      <section class='text-center text-white'>                                                                
+        <div class='container' style='height: 32px'>
+           <a href="https://github.com/NodyHub/gurke.io"><img style='height: 100%' src='GitHub-Mark-32px.png' alt='GitHub' /></a>
+           <a href="https://twitter.com/NodyTweet"><img style='height: 100%' src='Twitter_Logo_Blue.png' alt='Twitter' /></a>
+        </div>
+      </section>
+
 
     </main>
 
