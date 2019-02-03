@@ -4,10 +4,10 @@
 
 sudo docker build -t rtl $GIT_BASE/gurke.io/docker/
 sudo docker run \
-    --rm \
     -d \
     -v $DATA_DIR:/data/ \
     --device=/dev/bus/usb \
+    --restart always \
     rtl
 
 exit 0
