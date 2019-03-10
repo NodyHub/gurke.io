@@ -8,10 +8,6 @@
 . $(dirname "$0")/CONFIG 
 
 # Local Variables
-DATA_SRC="$DATA_DIR/log.csv"
-DATAFILE_IN1="/tmp/temp.THN132N.dat"
-DATAFILE_IN2="/tmp/temp.OSv1.dat"
-PNG="/tmp/plot.png"
 MINY=13
 MAXY=41
 MYTICS=2

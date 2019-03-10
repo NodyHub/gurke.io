@@ -1,4 +1,9 @@
-WEBHOST=UNSET
-WEBDIR=UNSET
-GIT_BASE=UNSET
-DATA_DIR=UNSET
+WEBHOST=
+WEBDIR=
+GIT_BASE=
+DATA_DIR=
+DATA_SRC="$DATA_DIR/log.csv"
+DATAFILE_IN1="/tmp/temp.THN132N.dat"                                                                                    
+DATAFILE_IN2="/tmp/temp.OSv1.dat"
+PNG="/tmp/plot.png"
+

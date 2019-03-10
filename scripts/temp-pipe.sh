@@ -83,14 +83,14 @@ page="
                   <tr>
                       <td>$date_my</td>
                       <td>$time_my</td>
-                      <td>THN132N</td>
+                      <td><a href='temp.THN132N.dat' target='_blank'>THN132N</a></td>
                       <td>$temp_my °C</td>
                       <td>Mein Balkon</td>
                   </tr>
                   <tr>
                       <td>$date_other</td>
                       <td>$time_other</td>
-                      <td>OSv1 Temperature Sensor</td>
+                      <td><a href='temp.OSv1.dat' target='_blank'>OSv1 Temperature Sensor</a></td>
                       <td>$temp_other °C</td>
                       <td>Nachbar</td>
                   </tr>
@@ -117,6 +117,8 @@ page="
 "
 
 echo $page | ssh $WEBHOST "cat > $WEBDIR/index.html"
+scp $DATAFILE_IN1 $WEBHOST:$WEBDIR/
+scp $DATAFILE_IN2 $WEBHOST:$WEBDIR/
 
 exit 0
 
